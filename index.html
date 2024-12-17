@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema CRUD</title>
+</head>
+<body>
+    <h1>Sistema de CRUD</h1>
+    <div class="cadastro">
+        <h3>Cadastro</h3>
+        <label for="placa">Placa:</label>
+        <input id="placa" type="text"><br>
+        <label for="marca">Marca:</label>
+        <input id="marca" type="text"><br>
+        <label for="modelo">Modelo</label>
+        <input id="modelo" type="text"><br>
+        <button onclick="add()">Cadastrar</button>
+    </div>
+    <div class="listagem">
+        <h3>Listagem</h3>
+        <p id="lista"></p>
+    </div>
+    <div class="editar">
+        <h3>Edição</h3>
+        <label for="editPlaca">Placa:</label>
+        <input id="editPlaca" type="text">
+        <button onclick="buscar()">Buscar</button><br>
+        <label for="editMarca">Marca:</label>
+        <input id="editMarca" type="text"><br>
+        <label for="editModelo">Modelo:</label>
+        <input id="editModelo" type="text"><br>
+        <button onclick="edit()">Editar</button>
+    </div>
+    <div class="excluir">
+        <h3>Excluir</h3>
+        <label for="delete">Placa:</label>
+        <input id="delete" type="text">
+        <button onclick="del()">Excluir</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
